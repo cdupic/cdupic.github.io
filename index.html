@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clement Dupic's Portfolio</title>
+    <link rel="stylesheet" href="static/css/variables.css">
+    <link rel="stylesheet" href="static/css/global.css">
+    <link rel="stylesheet" href="static/css/header.css">
+    <link rel="stylesheet" href="static/css/hero.css">
+    <link rel="stylesheet" href="static/css/projects.css">
+    <link rel="stylesheet" href="static/css/contact.css">
+    <link rel="stylesheet" href="static/css/footer.css">
+    <link rel="stylesheet" href="static/css/scrollbar.css">
+    <link rel="stylesheet" href="static/css/tools.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="static/js/script.js" defer></script>
+</head>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="logo">Clement Dupic</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1>Welcome !</h1>
+            <p>My name is Clement Dupic, a computer engineering student at INSA Lyon, France. I am keen in data analyses and wish to do finance related projects.</p>
+            <a href="#learn-more-description" id="learn-more-btn" class="btn-primary">Learn More</a>
+            <div id="learn-more-description" class="hidden-description">
+                <p>Currently, in my first year of this degree, I have attended Harvard CS50's Introduction To Artificial Intelligence with Python course (98% grade). I am also commited in the <a href="https://sia.asso-insa-lyon.fr/" target="_blank"><strong>SIA</strong></a> where I contribute as a developer for the moment. More information can be found in the resume attached below.</p>
+                <a href="CV_Clement_DUPIC.pdf" download>
+                    <img src="static/img/resume.png" alt="Download CV" class="tool-image">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="static/img/Logo_Growbox.png" alt="GrowBox" class="project-image">
+                </div>
+                <div class="project-content">
+                    <h3>GrowBox Website</h3>
+                    <p>Website developed with <a href="https://flask.palletsprojects.com/" target="_blank"><strong>Flask</strong></a> and <a href="https://jinja.palletsprojects.com/" target="_blank"><strong>Jinja2</strong></a>. Displayed data provided by a greenhouse we've built, filled with sensors whose data is transmitted through <a href="https://www.thethingsnetwork.org/" target="_blank"><strong>TTN</strong></a>, stored in our <a href="https://www.mysql.com/" target="_blank"><strong>MySQL</strong></a> database.</p>
+                </div>
+                <div class="project-footer">
+                    <a href="https://github.com/cdupic/P2I-Growbox-Website" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" class="github-icon">
+                    </a>
+                    <div class="progress-bar" data-progress="100">
+                        <div class="progress-fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="static/img/Logo_login.png" alt="LoginUI" class="project-image">
+                </div>
+                <div class="project-content">
+                    <h3>LoginUI</h3>
+                    <p>Basic LoginUI built using <a href="https://customtkinter.tomschimansky.com/" target="_blank"><strong>CustomTkinter</strong></a>. Password encrypted, multiple users can be added. Useful for a project that needs an authentication interface.</p>
+                </div>
+                <div class="project-footer">
+                    <a href="https://github.com/cdupic/LoginUI" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" class="github-icon">
+                    </a>
+                    <div class="progress-bar" data-progress="100">
+                        <div class="progress-fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="static/img/Logo_convertor.png" alt="Currency Converter" class="project-image">
+                </div>
+                <div class="project-content">
+                    <h3>Currency Converter</h3>
+                    <p>Currency converter made with <a href="https://docs.python.org/3/library/tkinter.html" target="_blank"><strong>Tkinter</strong></a> and relying on web-scraping to get the actual currency rates.</p>
+                </div>
+                <div class="project-footer">
+                    <a href="https://github.com/cdupic/convertisseur-monnaies" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" class="github-icon">
+                    </a>
+                    <div class="progress-bar" data-progress="100">
+                        <div class="progress-fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="static/img/Logo_Velov.png" alt="Velo'v Data" class="project-image">
+                </div>
+                <div class="project-content">
+                    <h3>Velo'v Data</h3>
+                    <p>Using <a href="https://pandas.pydata.org/" target="_blank"><strong>Pandas</strong></a> and <a href="https://www.tensorflow.org/" target="_blank"><strong>TensorFlow</strong></a>, trying to predict <a href="https://velov.grandlyon.com/fr/home" target="_blank"><strong>Velo'v</strong></a> stations attendance. Currently, getting data to feed the model.</p>
+                </div>
+                <div class="project-footer">
+                    <a href="https://github.com/cdupic" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" class="github-icon">
+                    </a>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 50%;">50%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Tools Section -->
+<div class="container">
+    <div class="languages-section">
+        <div class="languages-container">
+            <h3>Programing Languages</h3>
+            <div class="languages-icons-stats">
+                <div class="languages-icons">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" alt="Python" class="tool-image">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C" class="tool-image">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++" class="tool-image">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="SQL" class="tool-image">
+                </div>
+                <div class="github-stats">
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cdupic&layout=compact&hide_border=true" alt="GitHub Stats" class="stats-image">
+                    <p class="italic-text">(GitHub stats)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Libraries & Tools Section -->
+    <section id="libraries-tools" class="libraries-tools">
+        <div class="container">
+            <div class="libraries-tools-section">
+                <div class="libraries-container">
+                    <h3>Libraries</h3>
+                    <div class="libraries-icons">
+                        <!-- Add your library icons here -->
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" class="tool-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" class="tool-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg" alt="Selenium" class="tool-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg" alt="Flask" class="tool-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django" class="tool-image">
+
+                    </div>
+                </div>
+                <div class="tools-container">
+                    <h3>Tools</h3>
+                    <div class="tools-icons">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" class="tool-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="ORACLE" class="tool-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" class="tool-image">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetbrains/jetbrains-original.svg" alt="JetBrains" class="tool-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <!-- Contact Section -->
+<section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Do you have a project or a question? Write to me:</p>
+            <div class="emails">
+                <a href="mailto:clement.dupic@insa-lyon.fr" class="email-link" data-hover="all queries">clement.dupic@insa-lyon.fr</a>
+                <span>|</span>
+                <a href="mailto:clement.dupic@bde-insa-lyon.fr" class="email-link" data-hover="SIA related queries">clement.dupic@bde-insa-lyon.fr</a>
+            </div>
+            <p id="hover-text" class="hover-text"></p>
+        </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h3>Clement Dupic<span>.</span></h3>
+            <p>Computer engineering student, INSA LYON</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Me</h4>
+            <div class="social-icons">
+                <a href="https://github.com/cdupic" target="_blank" title="GitHub">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Clement Dupic. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </div>
+</footer>
+
+
+</body>
+</html>
+

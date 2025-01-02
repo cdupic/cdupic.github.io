@@ -1,0 +1,198 @@
+/* projects.css */
+.projects {
+    background: linear-gradient(to bottom, #ffffff, #f0f8ff, #ffffff); /* Gradient from white to light blue and back to white */
+    padding: 40px 20px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 80px; /* Increase the margin-bottom to add more space */
+}
+
+
+
+.projects h2 {
+    font-size: 2rem; /* Adjusted font size */
+    color: #222; /* Darker color to match the project card titles */
+    text-align: center; /* Center align the text */
+    margin-bottom: 50px; /* Increased space below the title */
+    letter-spacing: 1px; /* Spacing between letters */
+    border-bottom: 2px solid #ddd; /* Bottom border similar to project card footer */
+    display: inline-block; /* Inline block for border */
+    background: #fff; /* White background to match project cards */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px; /* Padding around the text */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Box shadow similar to project cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+}
+
+.projects h2:hover {
+    transform: translateY(-10px); /* Same hover effect as project cards */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Same hover effect as project cards */
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items horizontally */
+    gap: 45px; /* Space between project cards */
+    margin-top: 15px; /* Margin at the top */
+    align-items: stretch; /* Make all project cards the same height */
+}
+
+.project-card {
+    background: #fff; /* White card background */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 350px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    flex: 1 1 calc(33.333% - 30px); /* Ensure cards take equal height and width */
+}
+
+.project-card > * {
+    flex-grow: 1; /* Ensure internal content also aligns equally */
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 150px; /* Smaller image height */
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    filter: brightness(0.9);
+}
+
+.project-image-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 100%); /* Subtle fading effect */
+    pointer-events: none;
+}
+
+.project-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    opacity: 0.6;
+    z-index: 2;
+}
+
+.project-content {
+    padding: 20px;
+    text-align: left;
+    flex-grow: 1; /* Allow content to grow */
+}
+
+.project-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #222;
+    font-weight: bold;
+    margin-top: 0; /* Ensure title starts at the top of the content */
+}
+
+.project-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.project-footer {
+    text-align: left;
+    border-top: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 60px; /* Add padding to accommodate the logo */
+}
+
+.project-footer a {
+    display: inline-flex;
+    align-items: center;
+    color: #1e90ff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.project-footer a:hover {
+    color: #0056b3;
+}
+
+.progress-bar {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 75px; /* Adjust width as needed */
+    height: 24px; /* Fixed height */
+    background-color: #ddd; /* Background color for the empty part */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar .progress-fill {
+    height: 100%;
+    width: 100%; /* Ensure the fill takes full width */
+    background-color: #24e324; /* Default color for the filled part */
+    color: #fff;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-size: 0.8rem; /* Smaller font size */
+}
+
+.progress-bar[data-progress="100"] .progress-fill {
+    background-color: #afecaf; /* Light green color for 100% */
+    color: transparent; /* Hide the text */
+    background-image: url('/static/img/check.png'); /* Ensure the path is correct */
+    background-size: contain; /* Ensure the image fits within the element */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+}
+
+.github-icon {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+a {
+    color: inherit; /* Use the surrounding text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+}
+
+a:hover {
+    color: inherit; /* Keep the same color on hover */
+    text-decoration: none; /* Keep text non-underlined on hover */
+}
+
+#projects {
+    padding-top: 100px; /* Adjust the value as needed */
+    margin-top: -100px; /* Adjust the value to match the padding */
+}

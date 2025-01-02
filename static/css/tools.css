@@ -1,0 +1,120 @@
+.languages-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    margin-bottom: 0; /* Set bottom margin to zero */
+
+
+}
+
+.languages-icons-stats {
+    display: flex;
+    margin-left: 20px;
+
+    justify-content: center;
+    gap: 75px;
+}
+
+.languages-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    justify-items: center;
+    align-self: center; /* Center within the parent container */
+}
+
+.languages-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.languages-container h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.github-stats {
+    width: 50%;
+    text-align: center;
+}
+
+.stats-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.tools-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tool-card {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+.tool-card:hover {
+    transform: scale(1.05);
+}
+
+.tool-image {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Libraries & Tools Section */
+.libraries-tools-section {
+    display: flex;
+    gap: 20px;
+    margin-top: -200px; /* Set top margin to zero */
+
+}
+
+.libraries-container, .tools-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.libraries-container {
+    flex: 1; /* 1/3 of the space */
+}
+
+.tools-container {
+    flex: 2; /* 2/3 of the space */
+}
+
+.libraries-container h3, .tools-container h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.libraries-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.tool-image {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.tools-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}

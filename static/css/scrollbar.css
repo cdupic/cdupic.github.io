@@ -1,0 +1,22 @@
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+.scrollable-element {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scrollable-element::-webkit-scrollbar {
+    display: none;
+}

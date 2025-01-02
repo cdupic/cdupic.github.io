@@ -1,0 +1,32 @@
+/* contact.css */
+.contact {
+    padding: 150px 20px; /* Increase padding to add more space */
+    text-align: center;
+}
+
+/* contact.css */
+.emails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.email-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+.email-link:hover {
+    color: var(--secondary-color);
+}
+
+.hover-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: var(--primary-color);
+    visibility: hidden;
+}
